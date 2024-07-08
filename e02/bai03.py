@@ -83,6 +83,24 @@ if age >= 18:
 else:
     print("Khong kha dung.")
 
+nam_sinh=int(input("Năm sinh"))
+tuoi=2024-nam_sinh
+high=float(input("Chiều cao"))
+weigh=float(input("Cân nặng"))
+BMI=weigh/(high*high)
+if tuoi<18:
+    print("Không khả dụng")
+else:
+    print(BMI)
+    if BMI<18.5:
+        print("Gầy")
+    elif BMI >= 30:
+        print("Béo phì")
+    elif BMI>=25: 
+        print("Thừa cân")
+    else: 
+        print("Bình thường")
+
 # Nếu age >= 18, thì
 #   - Tính BMI = cân nặng (kg) / (chiều cao (m))^2
 #   Nếu BMI < 18.5: Gầy
