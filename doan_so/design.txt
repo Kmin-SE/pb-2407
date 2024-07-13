@@ -1,0 +1,15 @@
+Hello. Tui đang giữ một số bí mật trong [1, 100]. Hãy dự đoán để nhận về phần thương trên dưới 10 tỷ.
+Bạn có 3 lượt đoán.
+
+Đoán lần 1: _ 
+1/ Bạn đoán đúng, điểm của bạn là: ? => Dừng
+2/ Bạn đoán sai, Số bạn của bạn nhỏ / lớn quá
+
+Đoán lần 2: _ 
+1/ Bạn đoán đúng, điểm của bạn là: ? => Dừng
+2/ Bạn đoán sai, Số bạn của bạn nhỏ / lớn quá
+
+Đoán lần 3: _
+1/ Bạn đoán đúng, điểm của bạn là: ? => Dừng
+2/ Bạn đoán sai, Game over
+
