@@ -1,0 +1,101 @@
+Bài 05
+
+Ngày: 1 - 31 (a)
+Tháng: 1 - 12 (b)
+Nam: Số nguyên dương (c)
+
+Ngày tối đa là 28: Tháng 2 khi năm không nhuận
+Ngày tối đa là 29: Tháng 2 khi năm nhuận
+Ngày tối đa là 30: Tháng 4, 6, 9, 11
+Ngày tối đa là 31: Tháng 1, 3, 5, 7, 8, 10, 12
+
+ngay_max = 0
+Nếu tháng 1, 3, 5, 7, 8, 10, 12:
+    ngay_max = 31
+Ngược lại, nếu Tháng 4, 6, 9, 11:
+    ngay_max = 30
+Ngược lại, nếu tháng 2:
+    Nếu năm nhuận:
+        ngay_max = 29
+    Ngược lại:
+        ngay_max = 28
+
+
+Nếu năm > 0 and thang >= 1 and thang <= 12 and ngay >= 1 and ngay <= ngay_max:
+    Valid
+Ngược lại:
+    Unvalid
+
+--- Cách 1
+Nếu ngày không thỏa (a) hoặc tháng không thỏa (b) hoặc năm không thỏa (c):
+    Unvalid
+Ngược lại:
+    Nếu năm nhuận:
+        Nếu tháng 2:
+            Ngày > 29:
+                Unvalid
+        Ngược lại, nếu tháng 4, 6, 9, 11:
+            Ngày > 30:
+                Unvalid
+        Ngược lại:
+            Valid
+    Ngược lại (năm không nhuận):
+        Nếu tháng 2:
+            Ngày > 28:
+                Unvalid
+        Ngược lại, nếu tháng 4, 6, 9, 11:
+            Ngày > 30:
+                Unvalid
+        Ngược lại:
+            Valid
+
+--- Cách 2
+Nếu ngày không thỏa (a) hoặc tháng không thỏa (b) hoặc năm không thỏa (c):
+    Unvalid
+Ngược lại:
+    Nếu tháng 4, 6, 9, 11 và Ngày > 30
+        Unvalid
+    Ngược lại, nếu Tháng 1, 3, 5, 7, 8, 10, 12 và  Ngày > 31
+        Unvalid
+    Ngược lại, nếu tháng 2:
+        Nếu năm nhuận:
+            Ngày > 29:
+                Unvalid
+        Ngược lại:
+            Ngày > 28:
+                Unvalid
+        Ngược lại:
+            Valid
+    Ngược lại:
+        Valid
+
+--- Cách 3
+Nếu ngày không thỏa (a) hoặc tháng không thỏa (b) hoặc năm không thỏa (c):
+    Unvalid
+Ngược lại:
+    Nếu tháng 4, 6, 9, 11 và Ngày > 30
+        Unvalid
+    Ngược lại, nếu Tháng 1, 3, 5, 7, 8, 10, 12 và  Ngày > 31
+        Unvalid
+    Ngược lại, nếu tháng 2:
+        Nếu năm nhuận:
+            Ngày > 29:
+                Unvalid
+        Ngược lại:
+            Ngày > 28:
+                Unvalid
+        Ngược lại:
+            Valid
+    Ngược lại:
+        Valid
+
+--- Cách 2
+Nếu năm nhuận:
+    Nếu tháng 2:
+        Ngày > 29:
+            Unvalid
+
+Ngược lại:
+    Nếu tháng 2:
+        Ngày > 28:
+            Unvalid
