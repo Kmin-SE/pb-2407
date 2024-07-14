@@ -1,8 +1,8 @@
-# x = 1
+x = 1
 
-# while x <= 5:
-#     print("Yes")
-#     x = x + 1
+while x <= 5:
+    print("Yes")
+    x = x + 1
 
 # x = 1
 # x <= 5 : Đúng
